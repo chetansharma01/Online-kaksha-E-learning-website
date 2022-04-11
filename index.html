@@ -1,0 +1,191 @@
+<body>
+
+<div class="header">
+  <h2>	ONLINE KAKSHA </h2>
+
+</div>
+
+
+
+<div id="navbar" class="">
+  <a href="file:///D:/weeb/website%208%20template.html#" class="logo">ONLINE KAKSHA</a>
+  <a class="active" href="javascript:void(0)">Home</a>
+  <a href="file:///D:/weeb/About%20us.html">ABOUT US</a>
+  <a href="file:///C:/Users/Choudhary%20Computers/Desktop/Project/CLASS%209TH%20WEBPAGE.html">CLASS 9TH</a>
+   <a href="file:///C:/Users/Choudhary%20Computers/Desktop/Project/CLASS%2010TH%20WEBPAGE.html">CLASS 10TH</a>
+</div>
+<div class="w3-content w3-display-container" style="max-width:1800px">
+  <div class="slider1">
+  <img class="mySlides" src="1.png" style="width: 100%; display: block;">
+ <button class="s1btn">START NOW</button>
+ </div>
+
+  <img class="mySlides" src="2.png" style="width: 100%; display: none;">
+  <img class="mySlides" src="3.png" style="width: 100%; display: none;">
+  <img class="mySlides" src="4.png" style="width: 100%; display: none;">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">❮</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">❯</button>
+</div>
+
+
+<h2 style="text-align:center">TRENDING COURSES</h2>
+
+<div class="rowc">
+  <div class="columnc">
+    <div class="card1">
+  <img src="c1.jpg" alt="Denim Jeans" style="width:100%">
+  <h1>MATHS</h1>
+  <p class="price1">FREE</p>
+  <p>This course includes Class VI Mathematics Notes.</p>
+  <p> <span class="fa fa-star checkedc"></span>
+<span class="fa fa-star checkedc"></span>
+<span class="fa fa-star checkedc"></span>
+<span class="fa fa-star checkedc"></span>
+<span class="fa fa-star checkedc"></span></p>
+  <p><button>GO TO COURSE</button></p>
+</div>
+  </div>
+  <div class="rowc">
+  <div class="columnc">
+    <div class="card1">
+  <img src="c2.jpg" alt="Denim Jeans" style="width:100%">
+  <h1>SCIENCE</h1>
+  <p class="price1">FREE</p>
+  <p>This course includes Class VI SCIENCE Notes.</p>
+  <p> <span class="fa fa-star checkedc"></span>
+<span class="fa fa-star checkedc"></span>
+<span class="fa fa-star checkedc"></span>
+<span class="fa fa-star checkedc"></span>
+<span class="fa fa-star checkedc"></span></p>
+  <p><button>GO TO COURSE</button></p>
+</div>
+  </div><div class="rowc">
+  <div class="columnc">
+    <div class="card1">
+  <img src="c3.jpg" alt="Denim Jeans" style="width:100%">
+  <h1>ENGLISH</h1>
+  <p class="price1">FREE</p>
+  <p>This course includes Class VI ENGLISH NOTES.</p>
+<p> <span class="fa fa-star checkedc"></span>
+<span class="fa fa-star checkedc"></span>
+<span class="fa fa-star checkedc"></span>
+<span class="fa fa-star checkedc"></span>
+<span class="fa fa-star checkedc"></span></p>
+  <p><button>GO TO COURSE</button></p>
+</div>
+
+  </div><div class="rowc">
+  <div class="columnc">
+    <div class="card1">
+  <img src="c4.jpg" alt="Denim Jeans" style="width:100%">
+ <br>
+ <br>
+  <h1>SOCIAL SCIENCE</h1> 
+  <p class="price1">FREE</p>
+  <p>This course includes Class VI SOCIAL SCIENCE Notes.</p>
+   <p> <span class="fa fa-star checkedc"></span>
+<span class="fa fa-star checkedc"></span>
+<span class="fa fa-star checkedc"></span>
+<span class="fa fa-star checkedc"></span>
+<span class="fa fa-star checkedc"></span></p>
+  <p><button onclick="card4b()">GO TO COURSE</button></p>
+
+</div>
+  </div>
+
+
+  <section>ONLINE KAKSHA</section>
+<footer class="footer-distributed">
+
+      <div class="footer-left">
+
+        <h3>ONLINE<span>KAKSHA</span></h3>
+
+        <p class="footer-links">
+          <a href="#">Home</a>
+          ·
+          <a href="#">Blog</a>
+          ·
+          <a href="#">Pricing</a>
+          ·
+          <a href="#">About</a>
+          ·
+          <a href="#">Faq</a>
+          ·
+          <a href="#">Contact</a>
+        </p>
+
+        <p class="footer-company-name">ONLINE KAKSHA © 2020</p>
+
+        <div class="footer-icons">
+
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+
+        </div>
+
+      </div>
+
+      <div class="footer-right">
+
+        <p>Contact Us</p>
+
+        <form action="#" method="post">
+
+          <input type="text" name="email" placeholder="Email">
+          <textarea name="message" placeholder="Message"></textarea>
+          <button>Send</button>
+
+        </form>
+
+      </div>
+
+    </footer>
+
+
+
+
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+function card4b() { 
+window.open("https://www.javatpoint.com/");
+} 
+</script>
+
+
+
